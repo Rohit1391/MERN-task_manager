@@ -8,7 +8,7 @@ const AddTask = ({ onTaskAdded }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (task.trim()) {
-      await axios.post('http://localhost:5000/api/tasks', { title: task });
+      await axios.post('https://mern-task-manager-2-gkhx.onrender.com', { title: task });
       setTask('');
       onTaskAdded(); // refresh tasks in parent
     }
