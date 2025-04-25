@@ -8,12 +8,12 @@ const TaskList = ({ tasks, onDeleteOrUpdate }) => {
     const [updatedTitle, setUpdatedTitle] = useState('');
   
     const handleDelete = async (id) => {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`);
+      await axios.delete(`https://mern-task-manager-2-gkhx.onrender.com/${id}`);
       onDeleteOrUpdate(); // Re-fetch tasks
     };
   
     const handleUpdate = async (id) => {
-      await axios.put(`http://localhost:5000/api/tasks/${id}`, {
+      await axios.put(`https://mern-task-manager-2-gkhx.onrender.com/${id}`, {
         title: updatedTitle,
       });
       setEditingTaskId(null);
