@@ -1,3 +1,7 @@
+
+The app is live at: https://mern-task-manager-frontend-1.onrender.com/
+
+
 Use these steps to setup the whole app locally:
 -> git clone https://github.com/Rohit1391/MERN-task_manager.git (to clone the repo)
 -> cd task manager
