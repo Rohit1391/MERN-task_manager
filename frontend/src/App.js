@@ -7,7 +7,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   const fetchTasks = async () => {
-    const res = await axios.get('https://mern-task-manager-2-gkhx.onrender.com');
+    const res = await axios.get('https://mern-task-manager-2-gkhx.onrender.com/api/tasks');
     setTasks(res.data);
   };
 
